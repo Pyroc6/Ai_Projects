@@ -1,0 +1,29 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="mean_peaks_arr_flux <= -0.05\ngini = 0.5\nsamples = 295\nvalue = [225.26, 250.68]\nclass = 1", fillcolor="#ebf5fc"] ;
+1 [label="mean_arr_flux <= -0.2\ngini = 0.02\nsamples = 38\nvalue = [2.24, 250.68]\nclass = 1", fillcolor="#3b9ee5"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="one_two_flux <= -0.19\ngini = 0.01\nsamples = 35\nvalue = [1.12, 236.76]\nclass = 1", fillcolor="#3a9de5"] ;
+1 -> 2 ;
+3 [label="gini = 0.0\nsamples = 31\nvalue = [0.0, 218.19]\nclass = 1", fillcolor="#399de5"] ;
+2 -> 3 ;
+4 [label="one_two_flux <= -0.19\ngini = 0.11\nsamples = 4\nvalue = [1.12, 18.57]\nclass = 1", fillcolor="#45a3e7"] ;
+2 -> 4 ;
+5 [label="gini = 0.0\nsamples = 1\nvalue = [1.12, 0.0]\nclass = 0", fillcolor="#e58139"] ;
+4 -> 5 ;
+6 [label="gini = 0.0\nsamples = 3\nvalue = [0.0, 18.57]\nclass = 1", fillcolor="#399de5"] ;
+4 -> 6 ;
+7 [label="min_max <= -0.4\ngini = 0.14\nsamples = 3\nvalue = [1.12, 13.93]\nclass = 1", fillcolor="#49a5e7"] ;
+1 -> 7 ;
+8 [label="gini = 0.0\nsamples = 1\nvalue = [1.12, 0.0]\nclass = 0", fillcolor="#e58139"] ;
+7 -> 8 ;
+9 [label="gini = 0.0\nsamples = 2\nvalue = [0.0, 13.93]\nclass = 1", fillcolor="#399de5"] ;
+7 -> 9 ;
+10 [label="NG_diff_mean_peaks_arr_flux <= 0.04\ngini = 0.0\nsamples = 257\nvalue = [223.02, 0.0]\nclass = 0", fillcolor="#e58139"] ;
+0 -> 10 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+11 [label="gini = 0.0\nsamples = 5\nvalue = [5.6, 0.0]\nclass = 0", fillcolor="#e58139"] ;
+10 -> 11 ;
+12 [label="gini = 0.0\nsamples = 252\nvalue = [217.42, 0.0]\nclass = 0", fillcolor="#e58139"] ;
+10 -> 12 ;
+}
